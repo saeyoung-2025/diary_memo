@@ -10,7 +10,7 @@ export default function Home() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-      redirectTo: `${window.location.origin}`
+      redirectTo: `${window.location.origin}/auth/callback`
       }
     })
     
@@ -25,7 +25,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-cenhttps://diary-memo.vercel.app/auth/v1/callbackter h-16">
             <div className="flex items-center space-x-2">
               <span className="text-2xl">📔</span>
               <h1 className="text-xl font-bold text-gray-900">내 일기와 할일</h1>
