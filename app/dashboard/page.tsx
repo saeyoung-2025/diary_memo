@@ -84,3 +84,10 @@ export default function Dashboard() {
               <div className="text-gray-500 text-center py-8">
                 아직 작성한 일기가 없어요
               </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
